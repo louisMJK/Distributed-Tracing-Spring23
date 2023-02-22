@@ -1,12 +1,7 @@
 # Distributed-Tracing-Spring23
 
-## Microk8s
+- OpenTelemetry is [here](./open-telemetry-demo/).
 
-```shell
-microk8s enable community
-microk8s enable istio
-microk8s enable registry
-microk8s enable dashboard
-```
+- Docker & MicroK8s is [here](./docker-microk8s-demo/).
 
-## 
+- Istio tracing is [here](./istio-demo/).
