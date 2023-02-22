@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rolldice-reg-deployment
+  labels:
+    app: rolldice-r
+spec:
+  selector:
+    matchLabels:
+      app: rolldice-r
+  template:
+    metadata:
+      labels:
+        app: rolldice-r
+    spec:
+      containers:
+      - name: rolldice-registry
+        image: localhost:32000/rolldice-registry:latest
+        ports:
+        - containerPort: 8080
